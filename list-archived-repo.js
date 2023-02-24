@@ -3,7 +3,7 @@ const octokit = require("./lib");
 (async function() {
     for await (const response of octokit.paginate.iterator(
         octokit.rest.activity.listReposStarredByUser, {
-            username: "lanlyhs",
+            username: process.env.USER,
             per_page: 100,
         }
     )) {

@@ -6,6 +6,12 @@
 
 [List stop update repo](./list-stop-update-repo.js)
 
+## Prepare
+
+```bash
+cp .env.example .env
+```
+
 ## References
 
 [Github rest api](https://docs.github.com/en/rest)

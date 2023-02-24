@@ -2,7 +2,7 @@ const octokit = require("./lib");
 
 (async function() {
     const response = await octokit.rest.activity.listReposStarredByUser({
-        username: "lanlyhs",
+        username: process.env.USER,
         sort: "updated",
         direction: "asc",
         per_page: 100,
