@@ -1,9 +1,9 @@
-const octokit = require("./lib");
+import octokit from "./lib.js";
 
 (async function() {
     for await (const response of octokit.paginate.iterator(
         octokit.rest.activity.listReposStarredByUser, {
-            username: process.env.USER,
+            username: process.env.USER_NAME,
             per_page: 100,
         }
     )) {
