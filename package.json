@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@octokit/plugin-throttling": "^9.3.1",
+    "@octokit/plugin-throttling": "^9.6.1",
     "@octokit/rest": "^21.0.2",
     "dotenv": "^16.4.5"
   }
